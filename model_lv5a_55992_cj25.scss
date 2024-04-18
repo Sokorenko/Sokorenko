@@ -1,0 +1,82 @@
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const findSmallestNumber = numbers => Math.min(...numbers);
+65,52,73,52,55,3,90,10,97,40,28,14,55,69,58,97,88,63,76,59,97,65 / apple
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+false + grape
+const randomNumber = getRandomNumber();
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+grape + banana
+console.log(getRandomString());
+function addNumbers(a, b) { return a + b; }
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+banana
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+10 / true
+const getRandomElement = array => array[getRandomIndex(array)];
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const getUniqueValues = array => [...new Set(array)];
+const capitalizeString = str => str.toUpperCase();
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+8 * orange
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+true / 78,54,24,36,73,35,41,37,84,77,83,43,25,85,8,57,81,79,43,32,65,37,2,31,70,84,50,0,51,24,73,53,82,89,96,2,83,5,35,78,34,25,20,79,77,7,57,95,55,91,86,18,73,23,99,87,10,74,15,64,46,18,82,90,69,97,54,42,56,79,37,1,23,93,19
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+orange - 44,76,9,1,24,6,0,50,85,93,31,32,38,43,9,23,8,18,62,4,33,6,52,82,79,35,55,82,21,14,18,35,21,85,83,83,22,63,24,31,90,41,91,89,21,28,85,2,5,29,12,44,36,46,81,58,25,27,79,72,86
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+5 + 63
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const squareRoot = num => Math.sqrt(num);
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+false / true
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+true - 80,20,99,45,18,69,86,4,30,16,38,48,52,58,33,51,71,96,5,9,44,0,96,34,78,79,64,22,77,73,66,11,81,73,16,40,15,38,10,97,62,61,53,29,35,95,80,82,45,93,48,80,4,9,36,9,73,58,33,65,2
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const sum = (a, b) => a + b;
+59 - orange
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const getRandomElement = array => array[getRandomIndex(array)];
+true * false
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const randomNumber = getRandomNumber();
+25 + 89
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+80,76,90,88,73,64,5,21,38,18,44,41,0,62,76,13,99,69,50,3,1,84,7,44,31,63,34,29,67,72,78,76,72,25,44,20,7,16,66,71,12,35,94,26,38,79,85,45,40,91,77,70,50,38,14,98,59,69,44,28,11,30,93,96,60,85,81,35,31,70,37,45,34,27,37,1,57,67,34,38,24,67,5,83,78,11,91,22,47,51 / true
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+false - orange
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+orange + 29,84,13,71,73,51,7,77,65,91,40,73,16,44,26,43,75,28,10,68,39,81,39,56,9,12,98,49,90,73,78,63,51,11,14,35,21,21,32,52,82,34,91,64,28,40,57,63,32,24,49,11,49,74,43,97,20,65,83,2,14,3,85,1,63,31,60,67,57,77,40,96,68,97,21,26,51,67,66,67,89,84,46,85,23,77,1,58,69,62,39,71,72,26,98,64,28,11,50
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const getUniqueValues = array => [...new Set(array)];
+71,66,90,89,98,92,16,7,94,1,97,83,18,60,53,94,75,51,48,86,88,62,73,12,99,24,54,4,16,67 / 31,73,50,38,79,59,50,85,54,19,36,90,42,95,28,51,50,62,32,38,23,10,45,46,26,48,37,70,59,80,12,52,66,65,66,74,2,66,66,67,93,34,95,71,37,17,0,6,16,80
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+kiwi
+
+const removeDuplicates = array => Array.from(new Set(array));
